@@ -1,0 +1,220 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+
+<div id="header" style="background-image: url('{% static 'images/mainBg.png' %}')">
+        <div class="container">
+            <nav>
+                <img src="{% static 'images/Logo.png' %}" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#buy-and-sell">Hobbies</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class='bx bx-x' onclick="closemenu()"></i>
+                </ul>
+                <i class='bx bx-menu' onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Future Designer</p>
+                <h1> Hi, I'm <span>Lindley</span> <br>from the Philippines </h1>
+            </div>
+        </div>
+    </div>
+<!----------------about------------------------->
+<div id= "about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="{% static 'images/about_img.jpg' %}">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm Warren Lindley Bucton, and I'm driven by a curiosity about the future of technology.
+                    Currently, I'm exploring the field of Graphics Designing in creative fields and always interested
+                    in connecting with others who are passionate about innovation.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">My Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Developing Front-end Website </li>
+                        <li><span>Graphics Designer</span><br>Creating Engaging and Fascinating Graphics Design</li>
+                    </ul>
+                </div>
+                 <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2020 - 2021</span><br>Mock Call Simulation Passer</li>
+                        <li><span>2019 - 2020</span><br>Animation NCII </li>
+                        <li><span>2018 - 2019</span><br>Cheer dance champion</li>
+                    </ul>
+                </div>
+                 <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018 - 2020</span><br>Apas National High School</li>
+                        <li><span>2020 - 2021</span><br>Apas National Integrated Senior High Shool</li>
+                        <li><span>2022 - Current</span><br>Cavite State University Bacoor City Campus</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------services--------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+
+            <div>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+                <a href="https://www.behance.net/galleries/ui-ux/ui-ux">Learn more</a>
+            </div>
+            <div>
+                <h2>Graphics Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+                <a href="https://duck.design/?utm_term=duck%20design|kwd-296500697456&utm_campaign=bk_search_brand_260225_broad&utm_source=google&utm_medium=cpc&utm_content=cid:22287101207|adid:734905842634|gid:176569697258|tgid:kwd-296500697456|src:|dev:c|pn:|keyword:duck%20design|mt:b|expansion:|site:|csite:|devmod:|lockw:|locphy:9197131|nw:g&hsa_acc=7777649137&hsa_cam=22287101207&hsa_grp=176569697258&hsa_ad=734905842634&hsa_src=g&hsa_tgt=kwd-296500697456&hsa_kw=duck%20design&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAiAt4C-BhBcEiwA8Kp0CWpcRwzBuM2g9K74qLI5UkZ_6PFtdftKqFHC2A4d5uQigyDxjhWkuhoC_wAQAvD_BwE">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------other---------->
+<div id="buy-and-sell">
+    <div class="container">
+        <h1 class="sub-title">Hobbies/Source of Income</h1>
+         <div class="other-list">
+             <div class="sell">
+                 <img src="{% static 'images/item1.jpg' %}">
+                 <div class="layer">
+                     <h3>Smart phones</h3>
+                     <p>I buy and sell, repair, scrap, parts out any smartphone or electronic gadgets.</p>
+                 </div>
+             </div>
+             <div class="sell">
+                 <img src="{% static 'images/item2.jpg' %}">
+                 <div class="layer">
+                     <h3>Bikes</h3>
+                     <p>I buy low prices but high value bikes upgrade some components and sell it.</p>
+                 </div>
+             </div>
+             <div class="sell">
+                 <img src="{% static 'images/item3.jpg' %}">
+                 <div class="layer">
+                     <h3>Build Bikes</h3>
+                     <p>I build bikes from scratch, sell it for plenty of cash. I sometimes buy whole bike dismantle parts and sell it out to earn double the value of the whole bike. </p>
+                 </div>
+             </div>
+         </div>
+    </div>
+</div>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<!--------contact---------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class='bx bxl-gmail' ></i>lindleywarren11@gmail.com</p>
+                <p><i class='bx bxs-phone' ></i>09636542331</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/lindleyyy/"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://www.instagram.com/lindley_warren?igsh=MTRuMGV1MXFraWx3eA=="><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+                <a href="static/myCv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Lindley 2025</p>
+    </div>
+</div>
+
+{% block content %}
+{% endblock content%}
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyCnenGzaxtWE2i0DXZMf6Fc2OZZ-jaogwPZbI3QoKxRJQ9ZLC7dqLSofCJae3362lM/exec'
+    const form = document.forms ['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener ('submit', e => {
+        e.preventDefault()
+        fetch (scriptURL, { method: 'POST', body: new FormData(form) })
+            .then (response => {
+                msg.innerHTML = "Message Sent Successfully!"
+                setTimeout(function (){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch((error) => console.error('Error!', error.message))
+    })
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }function closemenu(){
+        sidemenu.style.right = "-200";
+    }
+</script>
+
+<script>
+    function toggleProjects() {
+        var showcase = document.getElementById("projectShowcase");
+        if (showcase.style.display === "none") {
+            showcase.style.display = "block";
+        } else {
+            showcase.style.display = "none";
+        }
+    }
+</script>
